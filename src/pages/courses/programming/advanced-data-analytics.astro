@@ -1,0 +1,119 @@
+---
+import IndCourseDetailsLayout from "../../../layouts/IndCourseDetailsLayout.astro";
+
+const metadata = {
+  title: "Learn Advanced Data Analytics at V.Vidhya",
+  description:
+    "Master Advanced Data Analytics at V.Vidhya in Surat. Learn Python, Pandas, NumPy, Power BI, SQL, data visualization, AI tools, and real-world analytics.",
+};
+
+const courseDetails = {
+  name: "Advanced Data Analytics",
+  duration: "4-6",
+  image: "/images/doodles/woman-presenting.svg",
+  imgAlt: "an Illustration of a woman presenting data",
+  overview:
+    "This course is designed for learners who want to advance beyond spreadsheets and build professional data analytics skills using industry-standard tools. Over 4 months, you'll learn how to analyze, clean, visualize, and interpret complex datasets using Python, NumPy, Pandas, SQL, and Power BI. Through hands-on projects and real-world case studies, you'll explore data transformation, exploratory data analysis (EDA), interactive dashboards, business intelligence, and AI-assisted analytics. By the end of the course, you'll be able to automate data workflows, create insightful reports and dashboards, solve real business problems using data, and build a professional portfolio that prepares you for roles such as Data Analyst, Business Intelligence Analyst, Reporting Analyst, or Business Analyst. Whether you're upgrading your existing skills or aiming for a career in analytics, this course provides the practical experience and confidence needed to work with data in today's AI-driven world.",
+};
+---
+
+<IndCourseDetailsLayout
+  metadata={metadata}
+  navSection="none"
+  courseDetails={courseDetails}
+>
+  <slot slot="course-curriculum-slot">
+    <li class="ind-course-imp-text">Python Programming for Data Analytics</li>
+    <ul class="ind-course-sublist">
+      <li>Introduction to Python & Jupyter Notebook</li>
+      <li>Variables, Data Types & Operators</li>
+      <li>Conditional Statements & Loops</li>
+      <li>Functions & Modules</li>
+      <li>Lists, Tuples, Dictionaries & Sets</li>
+      <li>File Handling & Exception Handling</li>
+    </ul>
+
+    <li class="ind-course-imp-text">NumPy & Pandas</li>
+    <ul class="ind-course-sublist">
+      <li>Introduction to NumPy Arrays</li>
+      <li>Working with Pandas DataFrames</li>
+      <li>Data Import & Export</li>
+      <li>Data Cleaning & Transformation</li>
+      <li>Filtering, Sorting & Grouping Data</li>
+      <li>Merging & Reshaping Data</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Data Visualization with Python</li>
+    <ul class="ind-course-sublist">
+      <li>Introduction to Data Visualization</li>
+      <li>Matplotlib Basics</li>
+      <li>Seaborn for Statistical Charts</li>
+      <li>Interactive Visualizations with Plotly</li>
+      <li>Visualization Best Practices</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Exploratory Data Analysis (EDA)</li>
+    <ul class="ind-course-sublist">
+      <li>Understanding Exploratory Data Analysis</li>
+      <li>Descriptive Statistics</li>
+      <li>Identifying Trends & Patterns</li>
+      <li>Correlation & Outlier Analysis</li>
+      <li>Feature Relationships & Insights</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Advanced SQL</li>
+    <ul class="ind-course-sublist">
+      <li>Advanced Joins & Subqueries</li>
+      <li>Common Table Expressions (CTEs)</li>
+      <li>Window Functions</li>
+      <li>Views & Indexes</li>
+      <li>Query Optimization Techniques</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Power BI</li>
+    <ul class="ind-course-sublist">
+      <li>Introduction to Power BI</li>
+      <li>Power Query & Data Transformation</li>
+      <li>Data Modeling & Relationships</li>
+      <li>Creating Interactive Reports</li>
+      <li>DAX Fundamentals</li>
+      <li>Dashboards & Report Publishing</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Business Analytics</li>
+    <ul class="ind-course-sublist">
+      <li>Key Performance Indicators (KPIs)</li>
+      <li>Sales & Marketing Analytics</li>
+      <li>Financial & HR Analytics</li>
+      <li>Customer & Product Analytics</li>
+      <li>Forecasting & Business Decision Making</li>
+    </ul>
+
+    <li class="ind-course-imp-text">AI for Data Analytics</li>
+    <ul class="ind-course-sublist">
+      <li>Using AI with Python & Power BI</li>
+      <li>AI-assisted Data Analysis</li>
+      <li>Automating Reports & Dashboards</li>
+      <li>Generating Insights with AI</li>
+      <li>Advanced Prompt Engineering</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Capstone Projects & Case Studies</li>
+    <ul class="ind-course-sublist">
+      <li>Retail Sales Dashboard</li>
+      <li>Customer Churn Analysis</li>
+      <li>HR Analytics Dashboard</li>
+      <li>Healthcare Data Analysis</li>
+      <li>Financial Performance Dashboard</li>
+      <li>End-to-End Data Analytics Project</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Career Readiness</li>
+    <ul class="ind-course-sublist">
+      <li>Building a Professional Portfolio</li>
+      <li>GitHub & Kaggle Fundamentals</li>
+      <li>Resume & Interview Preparation</li>
+      <li>Industry Best Practices & Career Opportunities</li>
+    </ul>
+  </slot>
+</IndCourseDetailsLayout>

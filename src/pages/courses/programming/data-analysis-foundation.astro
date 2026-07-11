@@ -1,0 +1,110 @@
+---
+import IndCourseDetailsLayout from "../../../layouts/IndCourseDetailsLayout.astro";
+
+const metadata = {
+  title: "Learn Foundations of Data Analysis at V.Vidhya",
+  description:
+    "Learn Data Analytics at V.Vidhya in Surat. Master Excel, SQL, data visualization, dashboards, business analytics, and AI-powered data analysis skills.",
+};
+
+const courseDetails = {
+  name: "Data Analysis Foundation",
+  duration: "2-3",
+  image: "/images/doodles/girl-doing-time-management.svg",
+  imgAlt: "an Illustration of a girl managing tasks",
+  overview:
+    "This course is designed to take you from a complete beginner to a confident data analyst. Over 2-33 months, you'll learn how to collect, organize, clean, analyze, and visualize data to uncover meaningful insights for better decision-making. Starting with the fundamentals of data analysis, you'll gain hands-on experience using Microsoft Excel and SQL to work with real-world datasets, perform calculations, create reports, and build interactive dashboards. You'll also learn essential business statistics, data visualization techniques, and how to use modern AI tools to improve productivity and streamline analysis. By the end of the course, you'll be able to transform raw data into actionable insights, create professional reports and dashboards, and build a strong foundation for careers in data analytics, business intelligence, or advanced data science. Whether you're a student, job seeker, working professional, or business owner, this course equips you with practical, industry-relevant skills that are in high demand across every industry.",
+};
+---
+
+<IndCourseDetailsLayout
+  metadata={metadata}
+  navSection="none"
+  courseDetails={courseDetails}
+>
+  <slot slot="course-curriculum-slot">
+    <li class="ind-course-imp-text">Introduction</li>
+    <ul class="ind-course-sublist">
+      <li>What is Data?</li>
+      <li>Data vs. Information</li>
+      <li>Importance & Applications of Data Analysis</li>
+      <li>
+        Types of Data Analytics (Descriptive, Diagnostic, Predictive &
+        Prescriptive)
+      </li>
+      <li>Career Opportunities in Data Analytics</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Microsoft Excel for Data Analysis</li>
+    <ul class="ind-course-sublist">
+      <li>Excel Interface & Workbook Management</li>
+      <li>Data Entry, Formatting & Tables</li>
+      <li>Sorting, Filtering & Conditional Formatting</li>
+      <li>Data Validation & Data Cleaning</li>
+      <li>Excel Functions & Formulas</li>
+      <li>Lookup & Reference Functions</li>
+      <li>Charts & Data Visualization</li>
+      <li>Pivot Tables & Pivot Charts</li>
+      <li>Interactive Dashboards</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Business Statistics</li>
+    <ul class="ind-course-sublist">
+      <li>Measures of Central Tendency</li>
+      <li>Measures of Dispersion</li>
+      <li>Percentage, Growth & Trend Analysis</li>
+      <li>Correlation & Business Insights</li>
+    </ul>
+
+    <li class="ind-course-imp-text">SQL for Data Analysis</li>
+    <ul class="ind-course-sublist">
+      <li>Introduction to Databases</li>
+      <li>Database Concepts & Tables</li>
+      <li>Basic SQL Queries</li>
+      <li>Filtering, Sorting & Aggregate Functions</li>
+      <li>Working with Joins</li>
+      <li>Basic Subqueries</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Data Cleaning & Analysis</li>
+    <ul class="ind-course-sublist">
+      <li>Handling Missing & Duplicate Data</li>
+      <li>Preparing Data for Analysis</li>
+      <li>Pattern & Trend Analysis</li>
+      <li>Sales, Customer & Performance Analysis</li>
+      <li>Business Reporting Techniques</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Business Intelligence</li>
+    <ul class="ind-course-sublist">
+      <li>Introduction to Business Intelligence</li>
+      <li>KPIs & Business Metrics</li>
+      <li>Data Storytelling</li>
+      <li>Creating Meaningful Reports</li>
+    </ul>
+
+    <li class="ind-course-imp-text">AI for Data Analysts</li>
+    <ul class="ind-course-sublist">
+      <li>Introduction to AI in Data Analytics</li>
+      <li>Using AI for Excel & SQL</li>
+      <li>AI-assisted Data Cleaning</li>
+      <li>Generating Reports with AI</li>
+      <li>Prompt Engineering Basics</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Mini Projects & Case Studies</li>
+    <ul class="ind-course-sublist">
+      <li>Sales Analysis Dashboard</li>
+      <li>Retail & Customer Analysis</li>
+      <li>Student Performance Analysis</li>
+      <li>Business Performance Dashboard</li>
+    </ul>
+
+    <li class="ind-course-imp-text">Career Readiness</li>
+    <ul class="ind-course-sublist">
+      <li>Portfolio Development</li>
+      <li>Resume & LinkedIn Optimization</li>
+      <li>Interview Preparation</li>
+    </ul>
+  </slot>
+</IndCourseDetailsLayout>
